@@ -1253,3 +1253,42 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
  2017-04-14 19:22:30,616 [P12832/D11/T43] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-04-13 19:22:30
  2017-04-14 19:40:52,054 [P12832/D11/T199] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: lucyjhawker@gmail.com, IP Address: 127.0.0.1
+ 2017-04-14 20:31:00,251 [P12832/D11/T652] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-04-14 20:31:00,258 [P12832/D11/T652] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-04-14 20:31:00,261 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-04-14 20:31:00,261 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-04-14 20:31:00,262 [P12832/D11/T652] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-04-14 20:31:00,265 [P12832/D11/T632] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-04-14 20:31:00,265 [P12832/D11/T554] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-04-14 20:31:00,265 [P12832/D11/T42] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-04-14 20:31:00,265 [P12832/D11/T656] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-04-14 20:31:00,265 [P12832/D11/T584] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-04-14 20:31:30,344 [P12832/D11/T664] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
